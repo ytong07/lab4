@@ -1,0 +1,18 @@
+.axis path,
+.axis line { 
+	fill: none;
+	stroke: #333;
+	shape-rendering: crispEdges;
+}
+
+.tooltip{
+    position:fixed;
+    display:none;
+    color: white;
+    background-color: black;
+    opacity: 0.85;
+    font-size: 12px;
+    font-family: sans-serif;
+    padding: 8px;
+    border-radius: 5px;
+}
