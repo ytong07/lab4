@@ -116,7 +116,7 @@ d3.csv('wealth-health-2014.csv', d3.autoType).then(data=>{
 		.attr('fill', (d)=>ordScale(d));
 	
 	svg.selectAll('text')
-		.data(data)
+		.data(ordScale.domain())
 		.enter()
 		.append('text')
 		.attr('x', width-130)
