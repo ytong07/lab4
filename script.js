@@ -115,11 +115,14 @@ d3.csv('wealth-health-2014.csv', d3.autoType).then(data=>{
     	.attr('height', 15)
 		.attr('fill', (d)=>ordScale(d));
 	
-	svg.selectAll('text')
+	//const keys = ['Sub-Saharan Africa','South Asia','East Asia & Pacific','Middle East & North Africa','America,Europe & Central Asia'];
+	
+	svg.selectAll('label')
 		.data(ordScale.domain())
 		.enter()
 		.append('text')
 		.attr('x', width-130)
-		.attr('y', function(d,i){ return 190 + i*20})
+		.attr('y', function(d,i){ return 312 + i*20})
+		.attr('font-size','12px')
 		.text(d=>d);
 });
